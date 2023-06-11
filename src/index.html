@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Launcher</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <div id="close">
+      <p>✕</p>
+    </div>
+    <label id = "statusLabel">Checking Build...</label>
+
+    <!-- #region login Box-->
+    <div id="login-box" class="login-box hide ">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input id="emailIn" type="text" name="" required="">
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input id="passwordIn" type="password" name="" required="">
+          <label>Password</label>
+        </div>
+        <a href="#" id="submitBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+    <!-- #endregion-->
+    
+    <div id="launchScreen" class="launchScreen hide">
+      <button id="launchApp" class="custom-btn btn-7"><span>Play</span></button>
+    </div>
+    
+
+    <div class="progress">
+      <progress id="download" class="progress-bar"></progress>
+    </div>
+
+    <script src="./logics/main.js"></script>
+  </body>
+</html>

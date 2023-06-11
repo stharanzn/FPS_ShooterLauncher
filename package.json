@@ -1,0 +1,36 @@
+{
+  "name": "fps_shooterlauncher",
+  "productName": "fps_shooterlauncher",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "stharanzn",
+    "email": "stharanzn1705@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "dotenv": "^16.1.4",
+    "electron-squirrel-startup": "^1.0.0",
+    "firebase": "^9.22.2",
+    "request": "^2.88.2",
+    "uaup-js": "^0.0.14"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "25.1.0"
+  }
+}
