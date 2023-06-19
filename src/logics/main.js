@@ -6,6 +6,8 @@ const uaup = require('uaup-js')
 
 dotenv.config();
 
+
+
 // #region FIELDS
 const firebaseConfig = {
     apiKey: process.env.API_KEY,
@@ -58,6 +60,7 @@ function loginUser(){
 
 onAuthStateChanged(_auth, (user)=>{
     if(user){
+        console.log(user);
         process.env._authState = true
         defaultOptions._authState = true;
         console.log("user exists: login")
